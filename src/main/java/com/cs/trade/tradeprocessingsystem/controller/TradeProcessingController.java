@@ -27,16 +27,9 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-
-
-
-
-
 @Path("/trade")
 public class TradeProcessingController {
-
 	private ObjectMapper objectMapper = new ObjectMapper();
-	
 	Logger log = Logger.getLogger(TradeProcessingController.class);
 	TradeValidatorService tradeValidatorService;
 	Trade trade;
